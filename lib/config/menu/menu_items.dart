@@ -36,6 +36,12 @@ const appMenuItems = <MenuItem>[
     icon: Icons.refresh_outlined,
   ),
   MenuItem(
+    title: 'Snack Bars',
+    subtitle: 'Snacks bars y dialogos',
+    link: '/snackbar',
+    icon: Icons.info_outline,
+  ),
+  MenuItem(
     title: 'Animaciones',
     subtitle: 'Animaciones',
     link: '/animates',

@@ -25,6 +25,11 @@ final appRouter = GoRouter(
       builder: (context, state) => ProgressScreen(),
     ),
     GoRoute(
+      name: SnackbarScreen.name,
+      path: '/snackbar',
+      builder: (context, state) => SnackbarScreen(),
+    ),
+    GoRoute(
       name: AnimatedScreen.name,
       path: '/animates',
       builder: (context, state) => AnimatedScreen(),
