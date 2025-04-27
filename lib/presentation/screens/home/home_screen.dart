@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget_application/presentation/screens/buttons/buttons_screen.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../config/menu/menu_items.dart';
 
@@ -70,8 +70,12 @@ class _CustomListTitle extends StatelessWidget {
         // );
 
         // OTRA FORMA
-        // Esto declarando en el main la ruta
-        Navigator.pushNamed(context, menuItem.link);
+        // Esto declarando en el main la ruta,
+        // Navigator.pushNamed(context, menuItem.link);
+
+        // usandod goRoutes, extendie en el context
+        // lo que pasa es que goRoute, extiende al contexto su metodos para usarse
+        context.push(menuItem.link);
       },
     );
   }
