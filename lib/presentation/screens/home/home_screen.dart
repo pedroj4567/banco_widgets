@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget_application/presentation/screens/buttons/buttons_screen.dart';
 
 import '../../../config/menu/menu_items.dart';
 
@@ -58,8 +59,19 @@ class _CustomListTitle extends StatelessWidget {
       subtitle: Text(
         menuItem.subtitle,
       ),
+
+      // Push es un stack de tarjetas
+      // si quieres echar para atras usar el pop
       onTap: () {
-        //TODO: Navegar a otras pantallas
+        // Navigator.of(context).push(
+        //   MaterialPageRoute(
+        //     builder: (context) => const ButtonsScreen(),
+        //   ),
+        // );
+
+        // OTRA FORMA
+        // Esto declarando en el main la ruta
+        Navigator.pushNamed(context, menuItem.link);
       },
     );
   }
