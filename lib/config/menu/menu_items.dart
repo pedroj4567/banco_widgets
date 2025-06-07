@@ -42,9 +42,9 @@ const appMenuItems = <MenuItem>[
     icon: Icons.info_outline,
   ),
   MenuItem(
-    title: 'Animaciones',
-    subtitle: 'Animaciones',
-    link: '/animates',
-    icon: Icons.toys,
+    title: 'Animated Container',
+    subtitle: 'Staful widget animado',
+    link: '/animated',
+    icon: Icons.check_outlined,
   ),
 ];
