@@ -10,6 +10,7 @@ const colorlist = <Color>[
   Colors.orange,
   Colors.pink,
   Colors.pinkAccent,
+  Colors.white
 ];
 
 class AppTheme {
