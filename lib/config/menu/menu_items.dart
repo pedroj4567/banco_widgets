@@ -47,4 +47,10 @@ const appMenuItems = <MenuItem>[
     link: '/animated',
     icon: Icons.check_outlined,
   ),
+  MenuItem(
+    title: 'UI Controls y tiles',
+    subtitle: 'Controladores + tiles',
+    link: '/ui-controlers',
+    icon: Icons.pan_tool,
+  ),
 ];
