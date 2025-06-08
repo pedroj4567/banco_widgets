@@ -53,4 +53,10 @@ const appMenuItems = <MenuItem>[
     link: '/ui-controlers',
     icon: Icons.pan_tool,
   ),
+  MenuItem(
+    title: 'Onboarding  / Tutorial',
+    subtitle: 'Pequenio tutorial introductorio',
+    link: '/onboarding',
+    icon: Icons.integration_instructions,
+  ),
 ];

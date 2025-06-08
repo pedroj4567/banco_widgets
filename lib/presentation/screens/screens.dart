@@ -1,3 +1,4 @@
+export 'package:widget_application/presentation/screens/onboarding/onboarding_screen.dart';
 export 'package:widget_application/presentation/screens/ui_controls/ui_controls_screen.dart';
 export 'package:widget_application/presentation/screens/animated/animated_screen.dart';
 export 'package:widget_application/presentation/screens/app_tutorial/app_tutorial_screen.dart';
