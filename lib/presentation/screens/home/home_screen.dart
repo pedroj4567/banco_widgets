@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widget_application/presentation/screens/cards/card_screen.dart';
+import 'package:widget_application/presentation/widgets/side_menu.dart';
 
 import '../../../config/menu/menu_items.dart';
 
@@ -13,12 +13,17 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // De esta manera obtenemos la referencia de la pantalla que
+    // maneja el drawer o algun elemento  a usar
+    final scafoldKey = GlobalKey<ScaffoldState>();
+
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Flutter mas material 3"),
-      ),
-      body: _HomeView(),
-    );
+        key: scafoldKey,
+        appBar: AppBar(
+          title: Text("Flutter mas material 3"),
+        ),
+        body: _HomeView(),
+        drawer: SideMenu(scaffoldKey: scafoldKey));
   }
 }
 
