@@ -9,7 +9,6 @@ void main() {
   runApp(
     // Con esto le dicemos a riverpod para distribuir por toda la app
     // las funciones
-
     ProviderScope(
       child: const MainApp(),
     ),
@@ -21,17 +20,15 @@ class MainApp extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final isDarkMode = ref.watch(isDarkModeProvider);
-    final selectedColor = ref.watch(selectedColorProvider);
+    // final isDarkMode = ref.watch(isDarkModeProvider);
+    // final selectedColor = ref.watch(selectedColorProvider);
+
+    final AppTheme appTheme = ref.watch(themeNotifierProvider);
 
     return MaterialApp.router(
-      title: "Flutter Widgets",
-      routerConfig: appRouter,
-      debugShowCheckedModeBanner: false,
-      theme: AppTheme(
-        selectedColor: selectedColor,
-        isDarkMode: isDarkMode,
-      ).getTheme(),
-    );
+        title: "Flutter Widgets",
+        routerConfig: appRouter,
+        debugShowCheckedModeBanner: false,
+        theme: appTheme.getTheme());
   }
 }

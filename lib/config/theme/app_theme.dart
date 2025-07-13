@@ -36,4 +36,14 @@ class AppTheme {
           centerTitle: false,
         ),
       );
+
+  // CON ESTO MANEJAMOS UNA COPIA DE LA FUNCION, PERO ES MEJOR MANEJAR UNA COPIA DEL ESTADO ANTEIOR AL QUE SE USA
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode,
+  }) =>
+      AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkMode: isDarkMode ?? this.isDarkMode,
+      );
 }
