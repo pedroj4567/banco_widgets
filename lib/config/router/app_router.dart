@@ -49,5 +49,15 @@ final appRouter = GoRouter(
       path: '/infinite-scroll',
       builder: (context, state) => InfiniteScrollScreen(),
     ),
+    GoRoute(
+      name: CounterScreen.name,
+      path: '/river-pod-manager',
+      builder: (context, state) => CounterScreen(),
+    ),
+    GoRoute(
+      name: ThemeChangeScreen.name,
+      path: '/theme-change',
+      builder: (context, state) => ThemeChangeScreen(),
+    ),
   ],
 );
